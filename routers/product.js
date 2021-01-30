@@ -25,7 +25,7 @@ routers.post(
 );
 
 routers.get("/product", getProduct);
-routers.get("/product/:id", [ValidateToken], getProductById);
+routers.get("/product/:id", getProductById);
 routers.put("/product/:id", [ValidateToken], editProduct);
 routers.delete("/product/:id", [ValidateToken], deletedproduct);
 
