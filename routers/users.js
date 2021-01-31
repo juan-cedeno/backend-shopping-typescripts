@@ -28,6 +28,6 @@ routers.post('/login' ,
 ]
  , login)
 
- routers.get('/renew',[ValidateToken] , renewToken)
+ routers.get('/renew', ValidateToken , renewToken)
 
 module.exports = routers;

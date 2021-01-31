@@ -63,7 +63,7 @@ const login = async (req = request, res = response) => {
     res.json({
       id: user._id,
       name: user.name,
-      token: token,
+      token
     });
   } catch (error) {
     console.log(error);
@@ -85,6 +85,7 @@ const renewToken = async (req = request, res = response) => {
       name,
       token,
     });
+
   } catch (error) {
     console.log(error);
     res.status(500).json({
